@@ -31,7 +31,7 @@ console.log(convertToRoman(34)); // Output: XXXIV
 console.log(convertToRoman(88)); // Output: LXXXVIII
 
 ```
-
+---
 2. **Check Number is floating or Integer**
 ```js
   function checkNumberType(num) {
@@ -42,6 +42,7 @@ console.log(convertToRoman(88)); // Output: LXXXVIII
   }
 }
  ```
+---
 3. Convert Underscore variable name to camelCase,
 Example: input= alok_singh_developer => alokSinghDeveloper
 ```js
@@ -59,6 +60,7 @@ function converter(input) {
 console.log(converter('my_new_array'));
 console.log(converter('alok_singh_developer'));
 ```
+---
 4. Statement:- Given a list of N students, every student is marked for M subjects. Each student is denoted by an index value. Their teacher Ms. Margaret must ignore the marks of any 1 subject for every student. For this she decides to ignore the subject which has the lowest class average. Your task is to help her find that subject, calculate the total marks of each student in all the other subjects and then finally return the array of the total marks scored by each student.
 Input Specification: input1: An integer value N denoting number of students
 input2: An integer value M denoting number of subjects
@@ -92,6 +94,7 @@ const reducedArray = newMarks.map(mark =>
 );
 console.log(reducedArray, 'Final Marks');
 ```
+---
 4. Fetch data from api and show inside table using map method on array
 Used Fetch and clear button to fetch and clear the data.
 ```jsx
@@ -146,6 +149,7 @@ export default function App() {
   );
 }
 ```
+---
 5.  count the occurance of the each and show in the object.
 ```js
 const dataArray = ["rat", "cat", "dog", "cat", "cat", "cat", "rat"];
@@ -163,6 +167,7 @@ function counter(elements) {
 
 counter(dataArray); //  {rat: 2, cat: 4, dog: 1}
 ```
+---
 6. Counter program with Start and pause button
 ```jsx
 import { useEffect, useState } from "react";

@@ -206,3 +206,68 @@ function App() {
 }
 export default App;
 ```
+7. Use recurssion to do deep copy in js
+```js
+const message = [
+  {
+    name: 'alok',
+    age: 20,
+    Foods: [
+      {
+        breakfast: 'Poha',
+        dinner: 'Khichdi',
+        sleep: [
+          {
+            napping: 'short',
+            deep: 'long',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    name: 'Subham',
+    age: 22,
+    Foods: [
+      {
+        breakfast: 'Maggie',
+        dinner: 'Pizaa',
+        sleep: [
+          {
+            napping: 'short only',
+            deep: 'long only',
+          },
+        ],
+      },
+    ],
+  },
+];
+
+function flaten(arr) {
+  let dataArr = [];
+  let hasNestedArray = false;
+
+  arr.forEach(item => {
+    const newItem = {};
+    for (const key in item) {
+      if (Array.isArray(item[key])) {
+        item[key].forEach(food => {
+          Object.assign(newItem, food); // Merge each food object into newItem
+        });
+        hasNestedArray = true;
+      } else {
+        newItem[key] = item[key];
+      }
+    }
+    dataArr.push(newItem);
+  });
+
+  if (hasNestedArray) {
+    return flaten(dataArr); // If there was a nested array, recursively flatten again
+  } else {
+    return dataArr; // Otherwise, return the flattened array
+  }
+}
+
+console.log(flaten(message));
+```

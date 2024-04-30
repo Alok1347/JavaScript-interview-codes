@@ -35,7 +35,6 @@ console.log(convertToRoman(88)); // Output: LXXXVIII
 2. **Check Number is floating or Integer**
 ```js
   function checkNumberType(num) {
-  console.log(Math.round(num), 'de');
   if (Math.round(num) === num) {
     return 'Integer';
   } else {

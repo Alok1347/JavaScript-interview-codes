@@ -1,5 +1,8 @@
 # JavaScript-interview-codes
-1. **Convert integer to Roman number**
+| 1   | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript)                                     |
+| 2   | [What is a prototype chain](#what-is-a-prototype-chain)                                                                                                       |
+
+1. ### What are the possible ways to create objects in JavaScript
 ```javascript
   function convertToRoman(num) {
   const romanNumerals = [
@@ -32,7 +35,8 @@ console.log(convertToRoman(88)); // Output: LXXXVIII
 
 ```
 ---
-2. **Check Number is floating or Integer**
+
+2. ### What is a prototype chain
 ```js
   function checkNumberType(num) {
   if (Math.round(num) === num) {

@@ -6,7 +6,7 @@
 | 1   | [Convert integer to Roman numbers upto 100](#convert-integer-to-roman-numbers-upto-100)                                                                       |
 | 2   | [Check wheather number is integer or Floating number](#check-wheather-number-is-integer-or-floating-number)                                                   |
 | 3   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
-| 4   | [Magereta teacher result declartion problem for calculating students average problem (Nagarro interview)](#magereta-teacher-result-declartion-problem-for-calculating-students-average-problem-nagarro-interview)                                                               |      
+| 4   | [Magereta teacher result declartion problem for calculating students average problem (Nagarro interview)](#magereta-teacher-result-declartion-problem-for-calculating-students-average-problem-nagarro-interview)                                                                                                                                    |      
 | 5   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
 
                                                                                                                                                                   

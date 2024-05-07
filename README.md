@@ -1,8 +1,17 @@
 # JavaScript-interview-codes
-| 1   | [What are the possible ways to create objects in JavaScript](#what-are-the-possible-ways-to-create-objects-in-javascript)                                     |
-| 2   | [What is a prototype chain](#what-is-a-prototype-chain)                                                                                                       |
+### Table of Contents
 
-1. ### What are the possible ways to create objects in JavaScript
+| No. | Questions                                                                                                                                                     |
+| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1   | [Convert integer to Roman numbers upto 100](#convert-integer-to-roman-numbers-upto-100)                                                                       |
+| 2   | [Check wheather number is integer or Floating number](#check-wheather-number-is-integer-or-floating-number)                                                   |
+| 3   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
+| 4   | [Magereta teacher result declartion problem for calculating students average problem (Nagarro interview)](#magereta-teacher-result-declartion-problem-for-calculating-students-average-problem-nagarro-interview)                                                               |      
+| 5   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
+
+                                                                                                                                                                  
+
+1. ### Convert integer to Roman numbers upto 100
 ```javascript
   function convertToRoman(num) {
   const romanNumerals = [
@@ -34,9 +43,10 @@ console.log(convertToRoman(34)); // Output: XXXIV
 console.log(convertToRoman(88)); // Output: LXXXVIII
 
 ```
+ **[⬆ Back to Top](#table-of-contents)**
 ---
 
-2. ### What is a prototype chain
+2. ### Check wheather number is integer or Floating number
 ```js
   function checkNumberType(num) {
   if (Math.round(num) === num) {
@@ -46,8 +56,9 @@ console.log(convertToRoman(88)); // Output: LXXXVIII
   }
 }
  ```
+ **[⬆ Back to Top](#table-of-contents)**
 ---
-3. Convert Underscore variable name to camelCase,
+3. ### Convert Underscore variable name to camelCase,
 Example: input= alok_singh_developer => alokSinghDeveloper
 ```js
 let result = [];
@@ -64,8 +75,10 @@ function converter(input) {
 console.log(converter('my_new_array'));
 console.log(converter('alok_singh_developer'));
 ```
+ **[⬆ Back to Top](#table-of-contents)**
 ---
-4. Statement:- Given a list of N students, every student is marked for M subjects. Each student is denoted by an index value. Their teacher Ms. Margaret must ignore the marks of any 1 subject for every student. For this she decides to ignore the subject which has the lowest class average. Your task is to help her find that subject, calculate the total marks of each student in all the other subjects and then finally return the array of the total marks scored by each student.
+4. ### Magereta teacher result declartion problem for calculating students average problem (Nagarro interview)
+Statement:- Given a list of N students, every student is marked for M subjects. Each student is denoted by an index value. Their teacher Ms. Margaret must ignore the marks of any 1 subject for every student. For this she decides to ignore the subject which has the lowest class average. Your task is to help her find that subject, calculate the total marks of each student in all the other subjects and then finally return the array of the total marks scored by each student.
 Input Specification: input1: An integer value N denoting number of students
 input2: An integer value M denoting number of subjects
 input3: A 2-D integer array of size N'M containing the marks of all students in each subject.
@@ -98,8 +111,9 @@ const reducedArray = newMarks.map(mark =>
 );
 console.log(reducedArray, 'Final Marks');
 ```
+ **[⬆ Back to Top](#table-of-contents)**
 ---
-4. Fetch data from api and show inside table using map method on array
+4.  Fetch data from api and show inside table using map method on array
 Used Fetch and clear button to fetch and clear the data.
 ```jsx
 import { useState } from "react";

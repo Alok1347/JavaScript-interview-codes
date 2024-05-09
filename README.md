@@ -8,6 +8,7 @@
 | 3   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
 | 4   | [Magereta teacher result declartion problem for calculating students average problem (Nagarro interview)](#magereta-teacher-result-declartion-problem-for-calculating-students-average-problem-nagarro-interview)                                                                                                                                    |      
 | 5   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
+| 8   | [Write a function to remove duplicate elements from array.](#write-a-function-to-remove-duplicate-elements-from-array)                                        |
 
                                                                                                                                                                   
 
@@ -235,3 +236,21 @@ function flaten(arr) {
 
 console.log(flaten(message));
 ```
+8. ### Write a function to remove duplicate elements from array.
+ ```js
+let arr = [1, 2, 3, 4, 5, 3 ,2,3 ,1 ,4,2];
+
+function removeDuplicates(arr){
+    const sorted=arr.sort()
+    for (let i=0 ; i< sorted.length;i++){
+        if(arr[i]==arr[i+1]){
+            sorted.splice(arr[i],1);
+            i--
+        }
+    }
+    return sorted
+}
+
+console.log(removeDuplicates(arr)); // Output: [ 1, 2, 3, 4, 5 ]
+```
+

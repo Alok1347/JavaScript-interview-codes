@@ -7,8 +7,9 @@
 | 2   | [Check wheather number is integer or Floating number](#check-wheather-number-is-integer-or-floating-number)                                                   |
 | 3   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
 | 4   | [Magereta teacher result declartion problem for calculating students average problem (Nagarro interview)](#magereta-teacher-result-declartion-problem-for-calculating-students-average-problem-nagarro-interview)                                                                                                                                    |      
-| 5   | [Convert Underscore variable name to camelCase](#convert-underscore-variable-name-to-camelcase)                                                               |
-| 8   | [Write a function to remove duplicate elements from array.](#write-a-function-to-remove-duplicate-elements-from-array)                                        |
+| 5   | [count the occurance of the each and show in the object.](#count-the-occurance-of-the-each-and-show-in-the-object)                                            |
+| 6   | [Use recurssion to do deep copy js Object](#use-recurssion-to-do-deep-copy-js-object)                                                                         |
+| 7   | [Write a function to remove duplicate elements from array.](#write-a-function-to-remove-duplicate-elements-from-array)                                        |
 
                                                                                                                                                                   
 
@@ -115,7 +116,7 @@ console.log(reducedArray, 'Final Marks');
  **[⬆ Back to Top](#table-of-contents)**
 
 ---
-5.  count the occurance of the each and show in the object.
+5. ### count the occurance of the each and show in the object.
 ```js
 const dataArray = ["rat", "cat", "dog", "cat", "cat", "cat", "rat"];
 function counter(elements) {
@@ -132,46 +133,11 @@ function counter(elements) {
 
 counter(dataArray); //  {rat: 2, cat: 4, dog: 1}
 ```
+ **[⬆ Back to Top](#table-of-contents)**
+
 ---
-6. Counter program with Start and pause button
-```jsx
-import { useEffect, useState } from "react";
-function App() {
-  const [counter, setCounter] = useState(0);
-  const [active, setActive] = useState(false);
 
-  useEffect(() => {
-    let interval = null;
-    if (active) {
-      interval = setInterval(() => {
-        setCounter((counter) => counter + 1);
-      }, 1000);
-    } else if (!active && counter !== 0) {
-      clearInterval(interval);
-    }
-    return () => clearInterval(interval);
-  }, [active, counter]);
-
-  const handleStart = () => {
-    setActive(true);
-  };
-
-  const handlePause = () => {
-    setActive(false);
-  };
-  return (
-    <div>
-      <h1>Welcome to my counter</h1>
-      <h2>{counter}</h2>
-      <button onClick={handleStart}>Start</button>
-      <br />
-      <button onClick={handlePause}>Pause</button>
-    </div>
-  );
-}
-export default App;
-```
-7. Use recurssion to do deep copy in js
+6. ### Use recurssion to do deep copy js Object
 ```js
 const message = [
   {
@@ -236,21 +202,26 @@ function flaten(arr) {
 
 console.log(flaten(message));
 ```
-8. ### Write a function to remove duplicate elements from array.
+ **[⬆ Back to Top](#table-of-contents)**
+---
+7. ### Write a function to remove duplicate elements from array.
  ```js
-let arr = [1, 2, 3, 4, 5, 3 ,2,3 ,1 ,4,2];
+let arr = [1, 2, 3, 4, 5, 3, 2, 3, 1, 4, 2];
 
-function removeDuplicates(arr){
-    const sorted=arr.sort()
-    for (let i=0 ; i< sorted.length;i++){
-        if(arr[i]==arr[i+1]){
-            sorted.splice(arr[i],1);
-            i--
-        }
+function removeDuplicates(arr) {
+  const sorted = arr.sort();
+  for (let i = 0; i < sorted.length; i++) {
+    if (arr[i] == arr[i + 1]) {
+      sorted.splice(arr[i], 1);
+      i--;
     }
-    return sorted
+  }
+  return sorted;
 }
 
 console.log(removeDuplicates(arr)); // Output: [ 1, 2, 3, 4, 5 ]
+
 ```
+ **[⬆ Back to Top](#table-of-contents)**
+
 

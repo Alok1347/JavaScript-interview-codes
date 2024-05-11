@@ -10,6 +10,7 @@
 | 5   | [count the occurance of the each and show in the object.](#count-the-occurance-of-the-each-and-show-in-the-object)                                            |
 | 6   | [Use recurssion to do deep copy js Object](#use-recurssion-to-do-deep-copy-js-object)                                                                         |
 | 7   | [Write a function to remove duplicate elements from array.](#write-a-function-to-remove-duplicate-elements-from-array)                                        |
+| 8   | [Find the largest two values of array.](#find-the-largest-two-values-of-array)                                        |
 
                                                                                                                                                                   
 
@@ -222,6 +223,37 @@ function removeDuplicates(arr) {
 console.log(removeDuplicates(arr)); // Output: [ 1, 2, 3, 4, 5 ]
 
 ```
+---
  **[⬆ Back to Top](#table-of-contents)**
+ 
+8. ### Find the largest two values of array.
+```js
+const arr = ['20','120','111','215','54','78'];
 
+function largest(arr){
+  const mutate = [...arr];
+  const largestarr = [];
+  
+  while(largestarr.length < 2){
+    let largestNum = mutate[0];
+    let largestIndex = 0;
+    
+    for(let i = 1; i < mutate.length; i++){
+      if(parseInt(mutate[i],10) > parseInt(largestNum,10)){
+        largestNum = mutate[i];
+        largestIndex = i;
+      }
+    }
+    
+    mutate.splice(largestIndex, 1);
+    largestarr.push(largestNum);
+  }
+  
+  return largestarr;
+}
 
+console.log(largest(arr));
+```
+
+ **[⬆ Back to Top](#table-of-contents)**
+---

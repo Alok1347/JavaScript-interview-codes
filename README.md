@@ -11,6 +11,7 @@
 | 6   | [Use recurssion to do deep copy js Object](#use-recurssion-to-do-deep-copy-js-object)                                                                         |
 | 7   | [Write a function to remove duplicate elements from array.](#write-a-function-to-remove-duplicate-elements-from-array)                                        |
 | 8   | [Find the largest two values of array.](#find-the-largest-two-values-of-array)                                        |
+| 8   | [Write a program to print message after 1 sec delay](#write-a-program-to-print-message-after-1-sec-delay)                                        |
 
                                                                                                                                                                   
 
@@ -255,5 +256,27 @@ function largest(arr){
 console.log(largest(arr));
 ```
 
+ **[⬆ Back to Top](#table-of-contents)**
+---
+9. Write a program to print message after 1 sec delay
+```js
+function printMessagesWithDelay(messages) {
+  messages.forEach((message, index) => {
+    setTimeout(() => {
+      console.log(message);
+    }, index * 1000); // Delay increases with each message
+  });
+}
+
+const messages = [
+  "Message 1",
+  "Message 2",
+  "Message 3",
+  "Message 4",
+  "Message 5"
+];
+
+printMessagesWithDelay(messages);
+```
  **[⬆ Back to Top](#table-of-contents)**
 ---

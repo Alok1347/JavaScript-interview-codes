@@ -258,7 +258,7 @@ console.log(largest(arr));
 
  **[⬆ Back to Top](#table-of-contents)**
 ---
-9. Write a program to print message after 1 sec delay
+9. ### Write a program to print message after 1 sec delay
 ```js
 function printMessagesWithDelay(messages) {
   messages.forEach((message, index) => {

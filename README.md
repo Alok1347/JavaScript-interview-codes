@@ -10,8 +10,10 @@
 | 5   | [count the occurance of the each and show in the object.](#count-the-occurance-of-the-each-and-show-in-the-object)                                            |
 | 6   | [Use recurssion to do deep copy js Object](#use-recurssion-to-do-deep-copy-js-object)                                                                         |
 | 7   | [Write a function to remove duplicate elements from array.](#write-a-function-to-remove-duplicate-elements-from-array)                                        |
-| 8   | [Find the largest two values of array.](#find-the-largest-two-values-of-array)                                        |
-| 9   | [Write a program to print message after 1 sec delay](#write-a-program-to-print-message-after-1-sec-delay)                                        |
+| 8   | [Find the largest two values of array.](#find-the-largest-two-values-of-array)                                                                                |
+| 9   | [Write a program to print message after 1 sec delay](#write-a-program-to-print-message-after-1-sec-delay)                                                     |
+| 10   | [Output 1](#output-1)                                                                                                                                        |
+| 11   | [Output 2](#output-2 )                                                                                                                                       |
 
                                                                                                                                                                   
 
@@ -279,4 +281,23 @@ const messages = [
 printMessagesWithDelay(messages);
 ```
  **[⬆ Back to Top](#table-of-contents)**
+---
+10. ### Output 1
+ ```js
+   getProjects().then(() => console.log('hi'));
+      console.log('hello');
+   ```
+   The console.log('hello') statement will be executed first, followed by the .then() callback function (console.log('hi')).
+This is because getProjects() is an asynchronous function that returns a Promise. When you call getProjects().then(), it schedules the execution of the callback function to be executed asynchronously after the promise returned by getProjects() resolves. Meanwhile, the console.log('hello') statement is synchronous and will be executed immediately.
+
+**[⬆ Back to Top](#table-of-contents)**
+---
+11. ### Output 2
+```js
+await getProjects();
+console.log('hello');
+```
+In JavaScript, when you use the await keyword, it pauses the execution of the code until the promise returned by the asynchronous function getProjects() resolves. This means that the code inside getProjects() will be executed first, and only after it completes will the console.log('hello') statement be executed. The output will be the result of getProjects() (assuming it returns something), followed by 'hello'
+
+**[⬆ Back to Top](#table-of-contents)**
 ---
